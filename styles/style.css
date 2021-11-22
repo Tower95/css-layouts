@@ -12,7 +12,7 @@ body{
 }
 
 .container{
-  width: 800px;
+  width: 900px;
   margin: 0px auto;
   /* position: relative; */
 }
@@ -234,4 +234,25 @@ h2::before{
   position: absolute;
   top: -10px;
   right: -25px;
+}
+
+/* FLOATS  */
+
+.author-image{
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author{
+  float: left;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  padding-top:10px;
+}
+
+h1{
+  float: left;
+}
+nav{
+  float: right;
 }
