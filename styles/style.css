@@ -1,6 +1,8 @@
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+
 }
 
 /* PAGE SECTIONS */
@@ -21,14 +23,13 @@ aside{
   background-color: #f7f7f7;
   border-top: 5px solid #1098AD;
   border-bottom: 5px solid #1098AD;
-  padding: 20px 0px;
-  width: 500px;
+  padding: 20px 40px;
 }
 
 nav {
   font-size: 18px;
-  padding-bottom: 10px;
-  text-align: center;
+  /* padding-bottom: 10px; */
+  /* text-align: center; */
 }
 
 article{
@@ -36,7 +37,7 @@ article{
 }
 
 .main-header{
-  /* background-color: #f7f7f7; */
+  background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
   /* height: 80px; */
@@ -72,7 +73,8 @@ h4{
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
 p{
@@ -129,13 +131,14 @@ li:nth-child(2){
   font-weight: bold;
 }
 
-.related-post{
+.related{
   list-style: none;
+  margin: 0px;
 }
 
-.related-post img{
-  float: left;
-  margin-right: 10px;
+.related img{
+  /* float: left; */
+  /* margin-right: 10px; */
   box-shadow: black 2px 3px 3px;
   border-radius: 10px;
 }
@@ -196,7 +199,6 @@ a:active{
 nav a:link{
   display:inline-block;
   margin-right: 30px;
-  margin-top: 10px;
   /* padding: 20px; */
 } 
 nav a:last-child{
@@ -248,11 +250,11 @@ h2::before{
 }
 
 /* FLOATS  */
-
-.author-image{
-  float: left;
+/*
+.aufloat: left;
   margin-bottom: 20px;
-}
+}thor-image{
+  
 
 .author{
   float: left;
@@ -270,7 +272,7 @@ nav{
 }
 
 .clear-float{
-  /* clear: both; */
+  clear: both;
 }
 
 .clearfix::after{
@@ -281,18 +283,86 @@ nav{
 
 article{
   float: left;
-  width: 800px;
-  /* border: solid red; */
+  width: 825px;
+  border: solid red;
 }
 
 aside{
   float: right;
-  width: 350px;
-  /* border: solid green; */
+  width: 300px;
+  border: solid green;
 }
 
 footer{
 clear: both;
-/* border: solid yellow; */
+border: solid yellow;
 
+}
+
+*/
+
+/* FLEXBOX */
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.author-info{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  margin-bottom: 50px;
+}
+.author-info p{
+  margin: 0;
+}
+
+#author{
+  margin-left: 15px;
+}
+
+/* layout aside */
+
+.related-post{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-post p{
+  margin: 0px;
+}
+
+.related-author{
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.related-link:link{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.row{
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+}
+article{
+  flex: 1;
+  margin-bottom: 0px;
+}
+
+aside{
+ /* align-self: start; */
+  flex: 0 0 300px;
+}
+
+footer p {
+  margin: 10px;
 }
