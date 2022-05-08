@@ -15,7 +15,7 @@
       .el--3 {
         background-color: green;
         height: 150px;
-      }
+      } 
       .el--4 {
         background-color: goldenrod;
       }
@@ -36,16 +36,18 @@
         /* STARTER */
         font-family: sans-serif;
         background-color: #ddd;
-        font-size: 40px;
+        font-size: 35px;
         margin: 40px;
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: auto 250px 150px 150px;
-        grid-template-rows:300px 300px 300px;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr ; */
+        grid-template-columns: 3fr 1fr 1fr 1fr ;
+        
+        grid-template-rows: 300px 200px ;
         /* gap: 20px; */
-        column-gap: 30px;
-        row-gap: 60px;
+         column-gap: 30px;
+        row-gap: 60px; 
       }
 
       .container--2 {
